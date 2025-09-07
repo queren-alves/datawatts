@@ -1,0 +1,7 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4;
+    background: rgb(41, 10, 70);
+}
