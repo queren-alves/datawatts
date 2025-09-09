@@ -1,64 +1,7 @@
-@import url('"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 @import url('../styles/style.css');
 
 body {
     background: #fff;
-}
-
-#help {
-    display: flex;
-    align-items: center;
-    gap: 20%;
-    padding: 0px 17%;
-    background: url('../images/kinda_purple.jpg');
-    background-size: cover;
-    color: #fff;
-    width: 100%;
-    height: 500px;
-}
-
-.help_title p {
-    font-size: 1.2rem;
-}
-
-.help_title h1 {
-    font-size: 2.5rem;
-    font-weight: 1000;
-}
-
-.help_title span {
-    color:#a749d3;
-}
-
-.help_icon {
-    font-size: 200px;
-    color: #d4bddf;
-    opacity: 0.2;
-    text-shadow: 0px 4px 20px rgba(175, 158, 158, 0.6);
-    position: relative;
-    display: inline-block;
-}
-
-.help_icon::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.1); /* cor do círculo */
-    border-radius: 70%; /* deixa redondo */
-    transform: translate(-50%, -50%);
-    z-index: -1; /* fica atrás do ícone */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* sombra suave */
-}
-
-.help_title {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 42%;
 }
 
 #contact_list {
@@ -88,7 +31,7 @@ body {
 }
 
 .tree_cards h2{
-    color: #a749d3;
+    color: #52269e;
 }
 
 .tree_cards {
@@ -117,7 +60,7 @@ body {
     flex: 1;
     padding: 2%;
     border-radius: 30px;
-    border: 1px, solid #a749d3 ;
+    border: 1px, solid #52269e;
 }
 
 .wpp a {
@@ -128,7 +71,7 @@ body {
 }
 
 .wpp h2 {
-    color: #a749d3;
+    color: #52269e;
 }
 
 .reunion {
@@ -151,11 +94,11 @@ body {
     text-decoration: none;
     transition: 0.3s ease;
     background: #fff;
-    color: #a749d3;
+    color: #52269e;
 }
 
 .reunion_btn:hover {
-  background: #a749d3;
+  background: #52269e;
   color: #fff;
 }
 
@@ -170,7 +113,7 @@ body {
     gap: 20px;
     flex: 1;
     padding: 2%;
-    border: 1px, solid #a749d3 ;
+    border: 1px, solid #52269e;
     border-radius: 30px;
 }
 
@@ -180,19 +123,19 @@ body {
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s ease;
-    background: #a407ec;
+    background: #52269e;
     color: #fff;
 }
 
 .cards_btn:hover {
-  background: #850cbd;
+  background: #44237c;;
 }
 
 .cards_icons {
     display: flex;
     align-items: center;
     font-size: 40px;
-    color: #cb87eb;
+    color: #52269e;
 }
 
 @media (max-width: 1150px) {
@@ -202,13 +145,13 @@ body {
 }
 
 @media (max-width: 750px) {
-     .help_icon {
+     .page_icon {
         display: none;
     }
 }
 
 @media (max-width: 900px) {
-    .help_title, .reunion, .wpp, .same_list {
+    .page_title, .reunion, .wpp, .same_list {
         max-width: 100%;
     }
 
