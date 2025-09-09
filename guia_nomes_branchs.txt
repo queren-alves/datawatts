@@ -1,0 +1,67 @@
+GUIA DE NOMES DE BRANCHS (Resumo Prático)
+
+1. REGRAS BÁSICAS
+- Sempre em minúsculas
+- Use "-" ou "/" (sem espaços)
+- Nome curto, claro e objetivo
+- Nomeie pelo propósito da branch
+
+Exemplo ERRADO: Nova funcionalidade login do usuário
+Exemplo CERTO:  feature/login-page
+
+
+2. ESTRUTURA RECOMENDADA
+tipo/descrição-curta
+
+TIPOS MAIS COMUNS:
+- feature/  -> nova funcionalidade
+   Ex: feature/login-page
+   Ex: feature/dashboard-charts
+
+- bugfix/   -> correção de bug
+   Ex: bugfix/navbar-overflow
+
+- hotfix/   -> correção urgente em produção
+   Ex: hotfix/security-header
+
+- refactor/ -> melhorias internas no código
+   Ex: refactor/auth-service
+
+- style/    -> layout, CSS, responsividade
+   Ex: style/home-responsive
+
+- docs/     -> documentação
+   Ex: docs/update-readme
+
+- test/     -> testes
+   Ex: test/unit-user-service
+
+
+3. COMO ESCOLHER O NOME
+1. Pergunte: o que essa branch vai fazer? (funcionalidade, bug, estilo, refatoração...)
+2. Escreva uma descrição curta e clara
+   Correto: feature/reset-password
+   Errado:  feature/nova
+3. Use palavras-chave relevantes ao código ou tela
+4. Use sempre kebab-case (palavras separadas por "-")
+5. Se usar Trello/Jira/GitHub Issues, adicione o ID
+   Ex: feature/123-login-page
+
+
+4. FLUXO RÁPIDO NO VS CODE (TERMINAL)
+Criar nova branch:
+git checkout -b feature/login-page
+
+Ver branchs:
+git branch
+
+Trocar de branch:
+git checkout nome-da-branch
+
+Fluxo recomendado:
+git checkout main
+git pull
+git checkout -b feature/login-page
+git add .
+git commit -m "feat: add login page"
+git push origin feature/login-page
