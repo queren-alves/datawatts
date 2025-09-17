@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    <link rel="stylesheet" href="src/styles/login.css">
+    <title>DataWatts</title>
+</head>
+<body>
+    <div id="forms">
+        <div class="form-logo"><a href="index.html"><i class="fa-solid fa-chart-column" id="logo"> <span>datawatts</span></i></a></div>
+        <div class="tabs">
+            <div class="tab active" data-tab="login">Login</div>
+            <div class="tab" data-tab="register">Criar Conta</div>
+        </div>
+        <form id="form-login" class="active" novalidate>
+            <div>
+                <label for="email-login">E-mail</label>
+                <input type="email" id="email-login" required>
+                <div class="error" id="email-login-error">Digite um e-mail válido.</div>
+            </div>
+            <div>
+                <label for="passaword-login">Senha</label>
+                <input type="password" id="passaword-login" required>
+                <div class="error" id="password-login-error">A senha é obrigatória.</div>
+            </div>
+            <div class="forgot">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <form id="form-register" novalidate>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+                <div class="error" id="email-error">Digite um e-mail válido.</div>
+            </div>
+            <div>
+                <label for="passaword">Senha</label>
+                <input type="password" id="passaword" minlength="8" required>
+                <div class="error" id="password-error">A senha deve ter no mínimo 8 caracteres.</div>
+            </div>
+            <div>
+                <label for="confirm">Confirmar Senha</label>
+                <input type="password" id="confirm" required>
+            </div>
+            <div>
+                <label for="first-name">Nome</label>
+                <input type="text" id="first-name" required>
+                <div class="error" id="first-name-error">Nome é obrigatório.</div>
+            </div>
+            <div>
+                <label for="last-name">Sobrenome</label>
+                <input type="text" id="last-name" required>
+                <div class="error" id="last-name-error">Sobrenome é obrigatório.</div>
+            </div>
+            <div>
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" required>
+                <div class="error" id="phone-error">Telefone é obrigatório.</div>
+            </div>
+            <button type="submit">Criar Conta</button>
+        </form>
+    </div>
+<script src="src/javascript/script.js"></script> 
+</body>
+</html>

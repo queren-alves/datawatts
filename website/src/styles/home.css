@@ -1,0 +1,296 @@
+@import url('../styles/about.css');
+
+#home {
+    background: url('../images/kinda_purple.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9% 19% 2% 16%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.hero-img img {
+    width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+#simulation {
+    margin-top: 4%;
+    padding: 0px 16%;
+    display: flex;
+    align-items: center;
+}
+
+#simulation h2 {
+    max-width: 90%;
+    font-size: 2rem;
+}
+
+#simulation h2 span {
+    color:#52269e;
+}
+
+.simu_title {
+    align-items: center;
+    max-width: 40%;
+    padding-right: 5%;
+    padding: 5%;
+}
+
+.simu_content {
+    margin-bottom: 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: #d4bddf;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #52269e;
+}
+
+#metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: left;
+    padding: 0px 16%;
+    padding-bottom: 4%;
+}
+
+.metric h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.metric p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.btn-home {
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background: #fff;
+    color: #52269e;
+    border: 1px, solid #52269e;
+    width: 25%;
+}
+
+.home-view {
+    margin-top: 4%;
+    color: #52269e;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.btn-home:hover {
+    color: #fff;
+    background: #52269e;
+}
+
+.sla {
+    background: #fff;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sla img {
+    max-height: 68%;
+    max-width: 68%;
+    margin-bottom: 4%;
+}
+
+#end {
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 80px;
+    }
+
+    .hero-text{
+        max-width: 100%;
+    }
+    .hero-img {
+        display: none;
+    }
+
+    #metrics {
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #simulation {
+        display: block;
+    }
+
+    #simulation h2 {
+        max-width: 100%;
+    }
+
+    .simu_title {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .simu_content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .hero-img {
+        width: 300px;
+    }
+
+    #simulation {
+        display: block;
+    }
+
+    #simulation h2 {
+        max-width: 100%;
+    }
+
+    .simu_title {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .simu_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    #metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #simulation {
+        display: block;
+    }
+
+    #simulation h2 {
+        max-width: 100%;
+    }
+
+    .simu_title {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .simu_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1150px) {
+    header {
+        background: #290A46;
+    }
+}
+
+@media (max-width: 1480px) {
+    .btn-home {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .end-content {
+        flex-direction: column;
+        gap: 30px
+    }
+    .end {
+        height: 100%;
+    }
+
+    .end {
+        flex-direction: column;
+    }
+
+    .end-title {
+        max-width: 100%;
+        border-right: none;
+        margin-bottom: 5%;
+        border-top: #52269e;
+        border-top: solid;
+        border-width: 2px;
+        padding-top: 4%;
+    }
+
+    .sla img {
+        display: none;
+    }
+}

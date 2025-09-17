@@ -1,0 +1,171 @@
+@import url('../styles/style.css');
+
+body {
+    background: #fff;
+}
+
+#contact_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contact_list a {
+    font-weight: normal;
+    font-size: 1.12rem;
+}
+
+#contact_list h2 {
+    font-size: 1.4rem;
+}
+
+.two_cards {
+    padding-top: 5%;
+    padding-left: 19%;
+    padding-bottom: 1%;
+    padding-right: 19%;
+    display: flex;
+    flex: 1;
+    gap: 40px;
+}
+
+.tree_cards h2{
+    color: #52269e;
+}
+
+.tree_cards {
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-bottom: 5%;
+    padding-right: 18%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 40px;
+}
+
+.tree_cards a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.wpp {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    padding: 2%;
+    border-radius: 30px;
+    border: 1px, solid #52269e;
+}
+
+.wpp a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.wpp h2 {
+    color: #52269e;
+}
+
+.reunion {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgb(41, 10, 70);
+    flex: 1;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+.reunion_btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background: #fff;
+    color: #52269e;
+}
+
+.reunion_btn:hover {
+  background: #52269e;
+  color: #fff;
+}
+
+.reunion h2 {
+    color: #fff
+}
+
+.same_list {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    padding: 2%;
+    border: 1px, solid #52269e;
+    border-radius: 30px;
+}
+
+.cards_btn {
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background: #52269e;
+    color: #fff;
+}
+
+.cards_btn:hover {
+  background: #44237c;;
+}
+
+.cards_icons {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: #52269e;
+}
+
+@media (max-width: 1150px) {
+    header {
+        background: #290A46;
+    }
+}
+
+@media (max-width: 750px) {
+     .page_icon {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .page_title, .reunion, .wpp, .same_list {
+        max-width: 100%;
+    }
+
+    .two_cards, .tree_cards {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .tree_cards {
+        display: grid;
+        flex: 0;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-left: 19%;
+    }
+}
+

@@ -1,0 +1,158 @@
+header {
+    height: 70px;
+    display: flex;
+    width: 100%;
+    padding: 20px 17%; 
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    z-index: 2;  
+}
+
+header.solid {
+    background: #290A46;
+}
+
+header span {
+    color:#fff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#nav_logo{
+    font-size: 22px;
+    color:  #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+nav a:hover {
+    color:#52269e;
+}
+
+.btn, .btn-outline {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn {
+    background: #52269e;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #4916a0;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #2d003b;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.desktop-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-actions {
+    display: none;
+}
+
+
+@media (max-width: 1530px) {
+
+  nav a {
+    margin: 0 10px;
+  }
+  
+}
+
+@media (max-width: 1400px) {
+
+  .desktop-actions {
+    display: none;
+  }
+
+  .mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;  
+    height: calc(100vh - 80px);
+    background: #290A46;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    gap: 20px;
+    transition: right 0.8s ease;
+    padding-top: 1%;
+    padding-left: 5%;
+    z-index: 2;
+  }
+
+  nav a {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+
+  .btn-login {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  header {
+    background: #290A46;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1400px) {
+  nav {
+    width: 40%;
+  }
+}

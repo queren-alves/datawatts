@@ -1,0 +1,35 @@
+@import url('../styles/style.css');
+@import url('../styles/intros.css');
+
+#size {
+    display: flex;
+    flex-direction: column;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 1%;
+}
+h2 {
+    color: #52269e;
+}
+
+details {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #52269e;
+    max-width: 50%;
+}
+
+summary {
+    color: #52269e;;
+    font-weight: bold;
+    list-style: none;
+    max-width: 50%;
+}
+
+summary::webkit-details-marker {
+    display: none;
+}

@@ -1,0 +1,95 @@
+@import url('../styles/style.css');
+@import url('../styles/intros.css');
+
+.btna {
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background: #fff;
+    color: #52269e;
+    border: 1px, solid #52269e;
+}
+
+.btna:hover {
+    color: #fff;
+    background: #52269e;
+}
+
+#clients {
+    padding: 1%;
+    font-size: 20px;
+}
+
+#solutions {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+#solutions .t {
+    padding-left: 17%;
+    color: #52269e;
+}
+
+#cards-feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.tree-cards {
+    padding-top: 1%;
+    padding-left: 17%;
+    padding-bottom: 1%;
+    padding-right: 18%;
+    display: flex;
+    flex: 1;
+    gap: 2%;
+}
+
+.card-feed {
+    padding: 2%;
+    background: linear-gradient(180deg, #fbfdff 0%, #f9e6ff 100%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    color: #000;
+    width: 100%;
+    transition: 1s ease;
+}
+
+.card-feed:hover {
+    background: #fff;
+    border: 1px, solid #52269e;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card-feed h3 {
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+
+    .page_title {
+        max-height: 70%;
+        font-size: 2rem;
+    }
+
+    .page_title p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .tree-cards {
+    flex-direction: column;
+    gap: 20px;
+    }
+}

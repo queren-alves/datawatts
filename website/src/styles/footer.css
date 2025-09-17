@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #9b9b9b;
+}
+
+@media (max-width: 1600px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 680px) {
+    footer {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+}

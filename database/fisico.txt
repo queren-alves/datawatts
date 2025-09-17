@@ -1,0 +1,61 @@
+CREATE TABLE Usuarios (
+  CPF VARCHAR(11) PRIMARY KEY,
+  Nome VARCHAR(100) NOT NULL,
+  Senha VARCHAR(6) NOT NULL
+);
+
+CREATE TABLE Ambiente (
+  ID_Ambiente INT(3) PRIMARY KEY
+  Nome_Ambiente VARCHAR(100) NOT NULL,
+  fk_Usuario_CPF VARCHAR(11) NOT NULL,
+  FOREIGN KEY (fk_Usuario_CPF) REFERENCES Usuarios(CPF)
+);
+
+CREATE TABLE Dispositivos (
+    ID_Dispositivo INT(3) PRIMARY KEY,
+    Nome_Dispositivo VARCHAR(100) NOT NULL,
+    Status VARCHAR(20),
+    Potencia INT(4),
+    Tempo_de_uso DOUBLE,
+    fk_Categoria_Dispositivo_ID_Categoria_Dispositivo INT(3) NOT NULL,
+    FOREIGN KEY (fk_Categoria_Dispositivos_ID_Categoria_Dispositivo) REFERENCES Categoria_Dispositivo(ID_Categoria_Dispositivo)
+);
+
+CREATE TABLE Categoria_Dispositivo (
+    ID_Categoria_Dispositivo INT(3) PRIMARY KEY,
+    Nome_Categoria VARCHAR(20) NOT NULL,
+    Descricao_Categoria VARCHAR(100)
+);
+
+CREATE TABLE Historico_de_Consumo (
+    ID_Historico INT(3) PRIMARY KEY,
+    Consumo DOUBLE,
+    Data DATE
+);
+
+CREATE TABLE Alerta_de_Consumo (
+    ID_Alerta INT(3) PRIMARY KEY,
+    Mensagem VARCHAR(100) NOT NULL,
+    Data_Emissao DATE,
+    Valor_Consumo DOUBLE
+);
+
+CREATE TABLE Ambiente_Dispositivo (
+    fk_Ambiente_ID_Ambiente INT(3) NOT NULL,
+    fk_Dispositivos_ID_Dispositivo INT(3) NOT NULL
+);
+
+CREATE TABLE Ambiente_Historico (
+    fk_Ambiente_ID_Ambiente INT(3) NOT NULL,
+    fk_Historico_de_Consumo_ID_Historico INT(3) NOT NULL
+);
+
+CREATE TABLE Dispositivo_Historico (
+    fk_Dispositivo_ID_Dispositivo INT(3) NOT NULL,
+    fk_Historico_de_Consumo_ID_Historico INT(3) NOT NULL
+);
+
+CREATE TABLE Historico_Alerta (
+    fk_Historico_de_Consumo_ID_Historico INT(3) NOT NULL,
+    fk_Alerta_de_Consumo_ID_Alerta INT(3) NOT NULL
+);
