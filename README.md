@@ -13,8 +13,7 @@ Projeto web de monitoramento de energia, atualmente com **front-end** quase comp
   - `fisico.txt` → Script SQL com os `CREATE TABLE`  
 
 - **models/**  
-  - `bpmn.png` → Modelagem de processos BPMN  
-  - `uml.png` → Diagrama UML  
+  - `bpmn.png` → Modelagem de processos BPMN   
   - `caso_de_uso.png` → Diagrama de casos de uso  
 
 - **website/**  
