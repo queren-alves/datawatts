@@ -113,7 +113,7 @@ nav a:hover {
 
   nav {
     position: fixed;
-    top: 80px;
+    top: 70px;
     right: -100%;
     width: 100%;  
     height: calc(100vh - 80px);
